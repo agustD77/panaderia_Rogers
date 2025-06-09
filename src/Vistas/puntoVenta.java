@@ -193,12 +193,15 @@ public class puntoVenta extends javax.swing.JFrame {
         ));
         jScrollPane4.setViewportView(jTable4);
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(153, 51, 0));
         jButton2.setText("Agregar cliente");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setFont(new java.awt.Font("Roboto Black", 0, 12)); // NOI18N
         jButton3.setForeground(new java.awt.Color(153, 51, 0));
         jButton3.setText("Regresar");
@@ -239,9 +242,9 @@ public class puntoVenta extends javax.swing.JFrame {
                         .addComponent(jButton2)
                         .addGap(18, 18, 18)
                         .addComponent(jButton3)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+                .addGap(62, 62, 62)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         jLabel2.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
@@ -294,6 +297,14 @@ public class puntoVenta extends javax.swing.JFrame {
         gProduc.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        ClientesFrecuentes cl = new ClientesFrecuentes();
+        cl.setVisible(true);
+        cl.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -160,10 +160,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        ClientesFrecuentes c1 = new ClientesFrecuentes();
+        c1.setVisible(true);
+        c1.setLocationRelativeTo(null);
+        this.dispose();
+        
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        Inventario In = new Inventario();
+        In.setVisible(true);
+        In.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void btnProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductosActionPerformed
