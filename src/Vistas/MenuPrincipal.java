@@ -98,7 +98,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(126, 69, 17));
         jLabel1.setText("Menú Principal");
 
@@ -107,7 +107,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(126, Short.MAX_VALUE)
+                .addContainerGap(107, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -117,13 +117,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
                             .addComponent(btnProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(106, 106, 106))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(80, 80, 80))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(41, Short.MAX_VALUE)
+                .addContainerGap(46, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(35, 35, 35)
                 .addComponent(btnProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -152,6 +152,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        puntoVenta vl = new puntoVenta();
+        vl.setVisible(true);
+        vl.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -167,6 +171,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         RoundedButton btnProductos = new RoundedButton("Gestion de productos");
         btnProductos.setBackground(new Color(102, 51, 0));
         btnProductos.setForeground(Color.WHITE);
+        
+        GestionProductos vl = new GestionProductos();
+        vl.setVisible(true);
+        vl.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_btnProductosActionPerformed
 
     /**
